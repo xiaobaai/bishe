@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #4361ee;
+    --primary-light: #eef2ff;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --info-color: #6b7280;
+    
+    --bg-light: #f8fafc;
+    --border-color: #e2e8f0;
+    --text-main: #1e293b;
+    --text-sub: #64748b;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-main);
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3046bc;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+/* Table Styling */
+.el-table {
+    --el-table-header-bg-color: #f8fafc !important;
+    --el-table-header-text-color: var(--text-main) !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.el-table th {
+    font-weight: 600 !important;
+    background-color: #f8fafc !important;
+}
+
+.el-table--striped .el-table__row--striped td {
+    background-color: #fcfdfe !important;
+}
+
+/* Button Styling */
+.el-button {
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+}
+
+/* Form Styling */
+.el-input__wrapper {
+    box-shadow: 0 0 0 1px var(--border-color) inset !important;
+    border-radius: 6px !important;
+}
+
+.el-input__wrapper.is-focus {
+    box-shadow: 0 0 0 1px var(--primary-color) inset !important;
+}
+
+/* Pagination Styling */
+.el-pagination {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Front container */
+.front-container {
+    width: 60%; margin: 0 auto;
+    padding: 10px 0;
+    min-height: 100vh
+}
+
+.myEff {
+    max-width: 500px;
+}
+
+.line1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.line2 {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 超出几行省略 */
+    overflow: hidden;
+}
+
